@@ -3,7 +3,10 @@
 
 cat <<EOF
 ---
-
+addons:
+  - heroku-postgresql:dev
+  - memcachier:dev
+  - scheduler:standard
 config_vars:
   PATH: /app/bin:/app/vendor/nginx/sbin:/app/vendor/php/bin:/app/vendor/php/sbin:/usr/local/bin:/usr/bin:/bin
   ENABLE_SYSTEM_ACCESS: false
